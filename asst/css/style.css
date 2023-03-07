@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.text-white {
+    color: white !important;
+}
+
+#main{
+
+}
+
+#header{
+    height: 46px;
+    background-color:#000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#nav {
+    display: inline-block;
+}
+
+#nav >li {
+    display: inline-block;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav>li:hover > a {
+    background: #ccc;
+    color: #000;
+}
+#nav li{
+    position: relative;
+}
+.subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0,0,0);
+}
+.subnav li{
+    padding: 0 12px;
+    display: block;
+}
+
+.subnav li a {
+    color: #000;
+    text-decoration: none;
+    line-height: 38px;
+}
+
+.subnav li:hover {
+    background: #ccc;
+    color: #000;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+.search-btn {
+    line-height: 46px;
+    float: right;
+    padding: 0 21px;
+}
+
+.search-btn:hover {
+    background:#f44336;
+    cursor: pointer;
+}
+
+
+.search-icon {
+    color: #fff;
+    font-size: 20px;
+}
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background-image: url('https://www.w3schools.com/w3css/img_la.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.text-contain {
+    position:absolute;
+    bottom: 47px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.text-heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text-description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content{
+
+}
+
+.content-section {
+    width: 800px;
+    padding: 64px 0 112px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.section-sub-heading {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.about-text {
+    margin-top: 25px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.members-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.member-item {
+    text-align: center;
+}
+
+.member-name {
+    font-size: 15px;
+}
+
+.member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.tickets-list {
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.tickets-list li {
+    color:#757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -2px;
+}
+
+.places-list {
+    padding-top: 32px;
+    padding-bottom: 48px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -8px;
+}
+
+.column {
+    padding: 0 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.place-img {
+    width: 100%; 
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.place-buy-btn {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.place-buy-btn:hover {
+    color: #000;
+    background: #ccc;
+}
+
+.contact-content {
+    margin-top: 48px ;
+}
+
+.contact-info {
+    font-size: 18px;
+}
+
+.contact-info p i {
+    width: 30px;
+    line-height: 1.4;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-submit {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    float: right;
+}
+
+.form-submit:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.map-section img {
+    width: 100%;
+}
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.socials-list a i {
+    width: 24px;
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+
+.socials-list a i:hover {
+    color: rgba(0,0,0,0.4);
+}
+
+.copyright {
+    color: rgba(0,0,0,0.6);
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.copyright a {
+    color: rgba(0,0,0,0.6);
+}
